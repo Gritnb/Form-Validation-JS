@@ -145,3 +145,11 @@ button {
 button:hover {
     background: #fd7b7b;
 }
+/* Validation */
+input:user-valid {
+  border: 1px solid rgb(92, 255, 92);
+}
+
+input:user-invalid {
+    border: 1px solid red;
+}
