@@ -70,10 +70,6 @@ main {
 /* Registration form */
 .form-container {
     padding: 25px;
-
-
-
-    border: 1px solid red;
 }
 
 h1 {
@@ -102,13 +98,14 @@ form {
     margin-block: 40px;
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 15px;
 }
 fieldset {
     padding: 0;
     margin: 0;
     border: 0;
     display: flex;
+    gap: 15px;
 }
 
 input {
@@ -116,5 +113,35 @@ input {
     display: block;
     background: #3C364C;
     outline: none;
-    border: none;
+    border: 1px solid transparent;
+    padding: 12px 10px;
+    border-radius: 5px;
+    color: #CCCACF;
+}
+
+input:focus {
+    border: 1px solid #7F74A3;
+    outline: none;
+}
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        margin: 0; 
+}
+/* Button */
+button {
+    background: #FF5E5E;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    padding: 12px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: .2s ease;
+}
+
+button:hover {
+    background: #fd7b7b;
 }
