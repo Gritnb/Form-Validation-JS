@@ -97,3 +97,24 @@ h1 {
 .login-link:hover{
     text-decoration: underline;
 }
+/* form & inputs */
+form {
+    margin-block: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+fieldset {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    display: flex;
+}
+
+input {
+    width: 100%;
+    display: block;
+    background: #3C364C;
+    outline: none;
+    border: none;
+}
