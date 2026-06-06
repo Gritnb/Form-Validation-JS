@@ -1,0 +1,99 @@
+/* CSS Resets */
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+*:not(dialog) {
+    margin: 0;
+}
+
+body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+}
+
+img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+}
+
+input, button, textarea, select {
+    font: inherit;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+}
+
+p {
+    text-wrap: pretty;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    text-wrap: balance;
+}
+/* Font */
+@font-face {
+    font-family: "Montserrat";
+    src: url("assets/Montserrat.ttf");
+    font-display: swap;
+}
+body {
+    font-family: "Montserrat";
+    height: 100svh;
+    background: #4a4a4a;
+    background: linear-gradient(138deg, rgba(74, 74, 74, 1) 0%, rgba(125, 125, 125, 1) 50%, rgba(143, 143, 143, 1) 100%);
+    color: #CCCACF;
+    display: grid;
+    place-items: center;
+}
+
+main {
+    height: 700px;
+    width: 60%;
+    background: #2C2638;
+    border-radius: 15px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    padding: 10px;
+}
+/* Registration company stuff */
+.image-container {
+    background: url("assets/logo.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+/* Registration form */
+.form-container {
+    padding: 25px;
+
+
+
+    border: 1px solid red;
+}
+
+h1 {
+    font-weight: 400;
+    letter-spacing: -1.3px;
+    margin-block: 10px;
+}
+
+.login {
+    font-size: 14px;
+    font-weight: 300;
+}
+
+.login-link,
+.login-link:active,
+.login-link:visited {
+    text-decoration: none;
+    color: #FF5E5E;
+}   
+
+.login-link:hover{
+    text-decoration: underline;
+}
