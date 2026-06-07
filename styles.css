@@ -100,6 +100,11 @@ form {
     flex-direction: column;
     gap: 15px;
 }
+
+.form-group {
+    flex: 1;
+}
+
 fieldset {
     padding: 0;
     margin: 0;
@@ -142,14 +147,28 @@ button {
     transition: .2s ease;
 }
 
-button:hover {
+button:hover,
+button:focus {
     background: #fd7b7b;
+    outline: none;
 }
 /* Validation */
-input:user-valid {
-  border: 1px solid rgb(92, 255, 92);
+input:valid {
+    border: 1px solid rgb(92, 255, 92);
 }
 
-input:user-invalid {
+input:invalid {
     border: 1px solid red;
+}
+
+input:placeholder-shown {
+    border: 1px solid #7F74A3;
+}
+
+.error-message {
+    color: #fd7b7b;
+}
+
+.error-message:empty {
+    display: none;
 }
